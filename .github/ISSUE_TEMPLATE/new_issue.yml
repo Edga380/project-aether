@@ -1,0 +1,30 @@
+name: New issue
+description: Create new issue
+title: "New issue"
+labels:
+  - test labels
+assignees:
+  - test assignees
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### **Test**
+        Test
+  - type: textarea
+    id: problem_or_motivation
+    attributes:
+      label: **Problem or Motivation**
+      description: Test
+      placeholder: Test
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: **Priority**
+      description: Test
+      options:
+        - Low
+        - Medium
+        - High
