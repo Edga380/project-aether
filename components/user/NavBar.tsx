@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 export default function NavBar() {
   const pathname = usePathname();
   return (
-    <div className="flex justify-between bg-lighterGreyTeal h-20 p-2">
+    <div className="flex justify-between bg-lighterGreyTeal h-20 p-2 border-b-2 border-lightGreyTeal">
       <Link href="/" className="my-auto">
         <Image src="/palogo.png" alt="Test" width={60} height={60} />
       </Link>
