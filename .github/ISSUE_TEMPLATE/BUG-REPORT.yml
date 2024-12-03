@@ -13,9 +13,18 @@ body:
     id: what-happened
     attributes:
       label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      description: Also tell us, what did you expect to happen and how to reproduce this issue?
+      value: |
+        "1. Tell us how to reproduce this bug."
+        "2. Where this bug is present in the codebase."
+    validations:
+      required: true
+  - type: textarea
+    id: how-to-solve
+    attributes:
+      label: How to solve?
+      description: Also tell us if you have an ides how to solve this issue.
+      placeholder: Write your suggestions how we could solve this issue.
     validations:
       required: true
   - type: dropdown
