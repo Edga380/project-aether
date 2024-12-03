@@ -7,8 +7,8 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
+        Double check if this issue isn't posted already.
         Make sure to explain this bug in great detail.
-        Attach screenshots if possible.
   - type: textarea
     id: what-happened
     attributes:
@@ -17,6 +17,7 @@ body:
       value: |
         1. Tell us how to reproduce this bug.
         2. Where this bug is present in the codebase.
+        3. Attach screenshots if available.
     validations:
       required: true
   - type: textarea
@@ -49,5 +50,6 @@ body:
       label: Are you going to work on this issue yourself?
       multiple: true
       options:
-        - This issue is free to anyone to take
+        - This issue is free for anyone to take
         - I will work on this issue myself
+      default: 0
