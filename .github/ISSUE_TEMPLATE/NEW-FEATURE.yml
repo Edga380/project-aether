@@ -14,13 +14,17 @@ body:
     id: what-enhancement
     attributes:
       label: What enhancement?
-      description: Also tell us, what do you expect from this enhancement?
-      placeholder: Tell us what you would like to see!
+      placeholder: |
+        Tell us what you would like to see!
+        Attach screenshots if available.
     validations:
       required: true
-  - type: textarea
-    id: logs
+  - type: dropdown
+    id: who-work-on-this-issue
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
+      label: Are you going to work on this issue yourself?
+      multiple: true
+      options:
+        - This issue is free for anyone to take
+        - I will work on this issue myself
+      default: 0
