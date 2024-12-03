@@ -15,15 +15,15 @@ body:
       label: What happened?
       description: Also tell us, what did you expect to happen and how to reproduce this issue?
       value: |
-        "1. Tell us how to reproduce this bug."
-        "2. Where this bug is present in the codebase."
+        1. Tell us how to reproduce this bug.
+        2. Where this bug is present in the codebase.
     validations:
       required: true
   - type: textarea
     id: how-to-solve
     attributes:
       label: How to solve?
-      description: Also tell us if you have an ides how to solve this issue.
+      description: Also tell us if you have any ideas how to solve this issue.
       placeholder: Write your suggestions how we could solve this issue.
     validations:
       required: true
@@ -43,3 +43,11 @@ body:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
+  - type: dropdown
+    id: who-work-on-this-issue
+    attributes:
+      label: Are you going to work on this issue yourself?
+      multiple: true
+      options:
+        - This issue is free to anyone to take
+        - I will work on this issue myself
