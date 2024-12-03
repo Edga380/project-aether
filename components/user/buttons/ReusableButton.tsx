@@ -18,10 +18,15 @@ type ReusableButtonProps = {
 
 export default function ReusableButton(props: ReusableButtonProps) {
   return props.path ? (
-    <Link href={props.path}></Link>
+    <Link
+      href={props.path}
+      className="bg-midTeal text-lightTeal font-semibold px-8 py-2 mr-2 rounded hover:bg-lightTeal hover:text-midTeal hover:shadow-md"
+    >
+      {props.name}
+    </Link>
   ) : (
     <button
-      className="bg-midTeal text-lightTeal font-semibold px-6 py-1 rounded hover:bg-lightTeal hover:text-midTeal hover:shadow-md"
+      className="bg-midTeal text-lightTeal font-semibold px-8 py-2 mr-2 rounded hover:bg-lightTeal hover:text-midTeal hover:shadow-md"
       onClick={props.onClick}
     >
       {props.name}
