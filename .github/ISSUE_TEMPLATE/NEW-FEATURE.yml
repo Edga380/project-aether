@@ -1,56 +1,26 @@
-name: New feature
-description: Create an issue for new feature.
-title: "[Feature]: "
-labels: ["feature"]
+name: Enhancement
+description: Create an issue for enhancement.
+title: "[enhancement]: "
+labels: ["enhancement"]
 
 body:
   - type: markdown
     attributes:
       value: |
-        ### **Feature description**
-        A clear and concise description of the feature or enhancement.
+        ### **Enhancement description**
+        A clear and concise description of the enhancement.
 
   - type: textarea
-    id: what-happened
+    id: what-enhancement
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: What enhancement?
+      description: Also tell us, what do you expect from this enhancement?
+      placeholder: Tell us what you would like to see!
     validations:
       required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-      default: 0
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
   - type: textarea
     id: logs
     attributes:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com).
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
